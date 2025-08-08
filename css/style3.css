@@ -1,0 +1,857 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    position: fixed;
+    background-color: #CB1C22;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 20px;
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+}
+
+.nav-phai{
+    position: absolute;
+    display: flex;
+    width: 15%;
+    height: 44px;
+    
+    align-items: center;
+    justify-content: space-around;
+    right: 30px;
+
+}
+.nav-phai .dang-nhap{
+    width: 44px;
+    height: 44px;
+    background-color: #7D161C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    
+}
+.nav-phai .gio-hang{
+    width: 132px;
+    height: 44px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 30px;
+    gap: 10px;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+.nav-phai .gio-hang:hover{
+    background-color: #1F2937;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav img{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+}
+#banner{
+    position: relative;
+    top: 70px;
+     background:linear-gradient(to bottom,#CB1C22,white);
+     width: 100vw;
+}
+#banner img{
+    position: relative;
+    width: 100%;
+    height: 285px;
+}
+.product{
+    display: flex;
+    position: relative;
+    top: 66px;
+  
+    width: 100%;
+    height: 252px;
+}
+
+.product .sub-product{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F4F6;
+    width: 20%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.product .sub-product .pro-duct{
+    display: flex;
+    position: relative;
+    width: 235px;
+    height: 110px;
+    background-color: white;
+    border-radius: 10px;
+}
+.item .product .sub-product .pro-duct img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    right: 10px;
+    transition: all 0.3s;
+}
+.pro-duct div{
+    padding: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+    width: 35%;
+   
+}
+.pro-duct-center{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 235px;
+    height: 232px;
+    justify-content: center;
+    align-items: center;
+}
+.pro-duct-center div{
+    position: absolute;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+}
+.item .product .sub-product .pro-duct-center img{
+    bottom: 10px;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transition: all 0.3s;
+}
+.item .product .sub-product .pro-duct:hover>img{
+    width: 90px;
+    height: 90px;
+}
+.item .product .sub-product .pro-duct-center:hover>img{
+    width: 185px;
+    height: 185px;
+}
+.map{
+    margin-top: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   width: 80%;
+
+    justify-self: center;
+}
+.sale{
+    position: relative;
+    top: 70px;
+ background-color: #FBD3B3;
+ height: 700px;
+ width: 98%;
+ 
+ border-radius: 25px;
+ justify-self: center;
+ margin-bottom: 80px;
+}
+.sale img{
+    position: relative;
+    width: 100%;
+    height: 121px;
+}
+.product-sale-list{
+    position: relative;
+    width: 98%;
+    height: 81%;
+    background-color: white;
+    justify-self: center;
+    border-radius: 25px;
+    display: flex;
+}
+
+.time-sale{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+}
+.time-1{
+    background-color: #FEE2E2;
+    width: 270px;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-end{
+    display: flex;
+    gap: 7px;
+}
+.time-end{
+    color: black;
+}
+.time-end div{
+    background-color: #EF4444;
+    color: white;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.time-2{
+    display: flex;
+    flex-direction: column;
+    width: 136px;
+    height: 79px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+}
+.time-2:hover{
+     background-color: #FEE2E2;
+      border-bottom: 2px solid red;
+     
+}
+.time-2 div{
+    color: black;
+}
+.time-2 .time2-end{
+    color: #6B7280;
+}
+.time-sale{
+    color: #E34B4B;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 79px;
+    display: flex;
+}
+.product-sale{
+    position: relative;
+    width: 25%;
+    height: 450px;
+
+    bottom: -100px;
+    
+}
+ .pro-duct-img{
+    width: 94%;
+    height: 70%;
+    border: 3px solid red;
+    border-radius: 10px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    gap: 20px;
+    position: relative;
+}
+.pro-duct-img div{
+    position: relative;
+    margin-top: 220px;
+}
+#product-sale-list .item-sale .pro-duct-img:hover>img{
+    width: 178px;
+    height: 178px;
+}
+#product-sale-list .item-sale .product-sale img{
+    position: absolute;
+    width: 168px;
+    height: 168px;
+   align-items: center;
+   margin-top: 30px;
+   transition: all 0.3s;
+}
+#product-sale-list .item-sale .da-ban{
+    width: 280px;
+    height: 22px;
+    background: linear-gradient(#C1393A ,#EF4444  );
+    color: white;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: 10px;
+    display:flex;
+    line-height: 22px;
+    
+}
+#product-sale-list .item-sale .da-ban div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+}
+#product-sale-list .item-sale .da-ban img{
+    margin-top: -5px;
+    width: 25px;
+    height: 25px;
+}
+#product-sale-list .item-sale .giam-gia{
+    position: relative;
+    width: 280px;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    margin-top: 10px;
+}
+#product-sale-list .item-sale .giam-gia button{
+    width: 125px;
+    height: 44px;
+    border: 0px;
+    background-color: #DC2626;
+    border-radius: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 525;
+    transition: all 0.3s;
+}
+#product-sale-list .item-sale .giam-gia button:hover{
+    background-color: #B91C1C;
+}
+#product-sale-list .item-sale .giam-gia-sub{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+}
+#product-sale-list .item-sale .gia-giam{
+    font-size: 20px;
+  
+    font-weight: 500 ;
+    letter-spacing: 1px;
+}
+#product-sale-list .item-sale .gia-goc{
+    display: flex;
+    justify-content: space-between;
+    color: #6b7280;
+}
+#product-sale-list .item-sale .gia-goc .sale-per{
+   
+    background-color: #fde68a;
+    color: #b45309;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    
+}
+#product-sale-list .item-sale .sale-per div{
+    margin-left: 10px;
+}
+#product-sale-list .item-sale .sale-per img{
+    margin: 0;
+    margin-left: -4px;
+    width: 18px;
+    height: 18px;
+}
+.san-pham{
+    margin-top: 30px;
+    height: 490px;
+    width: 98%;
+    justify-self: center;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 1.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.san-pham img{
+    position: absolute;
+    width: 100%;
+    height: 490px;
+}
+.san-pham .sanpham{
+    position: relative;
+    width: 18%;
+    height: 380px;
+    background-color: white;
+    bottom: -90px;
+    border-radius: 10px;
+}
+.sanpham-head{
+    
+    width: 227px;
+    height: 218px;
+    position: relative;
+  
+}
+.sanpham:hover{
+    box-shadow: 0 0 5px gray;
+}
+.sanpham:hover>.sanpham-head>.head-trai>a>.san-pham-img{
+     width: 149px;
+    height: 149px;
+}
+.item-sanpham .sanpham-head .cham-la-het{
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+.item-sanpham .sanpham-head .san-pham-img{
+    width: 140px;
+    height: 140px;
+   transition: all 0.3s;
+}
+.head-trai a{
+    width: 149px;
+    height: 210px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.head-trai{
+    margin-left: 5px;
+    width: 149px;
+    height: 210px;
+    position: absolute;
+   
+ 
+}
+.head-phai{
+    padding-top: 15px;
+    width: 55px;
+    height: 178px;
+    font-size: 10px;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-phai img{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    padding: 5px 0;
+}
+.head-phai p{
+    margin: 0;
+    padding: 0;
+}
+.tra-gop{
+    width: 83px;
+    height: 22px;
+    border-radius: 20px;
+    background-color: #e5e7eb;
+    font-size: 13px;
+    text-align: center;
+    line-height: 22px;
+    color: #6B7280;
+    left: 8px;
+    top: 8px;
+    position: relative;
+}
+.he-chon-gi{
+    width: 15%;
+    height: 334px;
+    background-color: #6B7280;
+    border-radius: 15px;
+    bottom: 10px;
+    position: relative;
+    bottom: -130px;
+
+}
+.he-chon-gi:hover{
+    box-shadow: 0 0 5px gray;
+}
+.service{
+    font-family: Arial, Helvetica, sans-serif   ;
+    position: relative;
+    margin-top: 30px;
+    justify-self: center;
+    width: 98%;
+    height: 210px;
+
+    display: flex;
+}
+.service-sub{
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.service img{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.service-sub p{
+   
+    font-size: 14px;
+        padding: 0px;
+        margin: 0px;
+
+}
+.footer-information{
+    width: 33.33%;
+    height: 100%;
+  
+    margin-bottom: 20px;
+}
+.hot-line p{
+    padding: 2px;
+    margin: 0;
+}
+.hot-line{
+    padding-bottom: 10px;
+}
+.about-us p{
+    padding: 4px;
+    margin: 0;
+    font-size: 15px;
+}
+.about-us p:hover{
+    text-decoration: underline;
+}
+.footer-3{
+    padding: 0 20px;
+    text-align: center;
+}
+.footer-3 p{
+    margin: 3px;
+}
+#tang-hinh{
+    visibility: hidden;
+}
+.item{
+    margin-top: 50px;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    
+   
+}
+
+ .item-sale{
+    position: relative;
+   display: flex;
+   padding-top: -50px;
+}
+.item-sanpham{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5%;
+   
+}
+.sanpham-img{
+    width: 60%;
+    height: 600px;
+
+    position: relative;
+    top: 30px;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.chi-tiet-san-pham{
+
+    position: relative;
+    width: 30%;
+    height: 600px;
+    top: 30px;
+    left: 5%;
+    border-bottom: 1px solid grey;
+}
+#img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#img img{
+    width: 60%;
+    height: 60%;
+}
+.ten-sanpham{
+    color: #090D14;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    height: 18%;
+}
+.ten-sanpham p{
+    margin: 0;
+}
+.khuyen-mai p{
+ margin: 5px;
+}
+.buy-button{
+    display: flex;
+    width: 100%;
+    height: 12%;
+
+    justify-self: center;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+.buy-button .mua-ngay{
+    width: 49%;
+    border: 0px;
+    background-color: #DC2626;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+.buy-button .mua-ngay:hover{
+    background-color: #B91C1C;
+}
+.buy-button .add-to-cart{
+    width: 49%;
+    border: 0px;
+    background-color: #090D14;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+.buy-button .add-to-cart:hover{
+    background-color: #1F2937 ;
+}
+form{
+    width: 60%;
+    height: 70%;
+  
+    display: flex;
+    flex-direction: column;
+    margin:3% 20%;
+    align-items: center;
+}
+form img{
+    width: 20%;
+    height: 10%;
+}
+form input{
+    height: 38px;
+    width: 90%;
+   margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+form input:focus{
+    outline:  none;
+    box-shadow: 0 0 10px #4c94e1;
+}
+form div{
+    margin-left: 10% ;
+    
+}
+form p{
+    margin: 0;
+   
+   
+}
+form div a{
+    position: relative;
+    width: 49%;
+ 
+}
+form .dangki,form .dangnhap{
+    width: 100%;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+form .dangki:focus,form .dangnhap:focus{
+    box-shadow: none;
+}
+form .dangki:hover{
+    background-color: #007BFF;
+    color: white
+}
+form .dangnhap:hover{
+    background-color: #007BFF;
+    color: white
+}
+.sp{
+  
+    width: 60%;
+    height: 60%;
+    align-self: center;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    position: relative;
+}
+.chose-all{
+    width: 100%;
+    height: 10%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+.all-left{
+   
+    display: flex;
+    height: 100%;
+    width: 30%;
+    align-items: center;
+}
+.chose-all .all-left input,.sp i{
+    margin:0 5%;
+    width: 17px;
+    height: 17px;
+    accent-color: #DC2626;
+}
+.sp1{
+    margin-top: 1%;
+    width: 100% ;
+    height: 45%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.sp1 .above{
+    display: flex;
+
+    height: 45%;
+    align-items: center;
+    gap: 1.5%;
+    position: relative;
+}
+.above input,.below input{
+    margin-left:  1.5%;
+     width: 17px;
+    height: 17px;
+    accent-color: #DC2626;
+}
+.sub-color{
+    position: absolute;
+    
+    bottom: -43px;
+    width: 16%;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+.sub-color p{
+    border: 1px solid gray;
+    margin: 0 -1px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.sub-color p:hover{
+    border: 1px solid red;
+}
+.sub-color-active:hover>.sub-color{
+    display: block;
+}
+.below{
+    width: 81%;
+    height: 45%;
+    background-color: #007BFF;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    
+}
+.thanh-toan{
+    height: 63%;
+    position: relative;
+    width: 30%;
+    background-color: white;
+    align-self: center;
+    margin-bottom: 8%;
+    margin-left: 3%;
+    border-radius: 10px;
+    
+}
+.thanh-toan div{
+    margin-left: 3%;
+}
+.thanh-toan input{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.thanh-toan input:focus{
+    outline: none;
+}
+.thanh-toan button{
+     width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #DC2626;
+    color: white;
+    font-size: 20px;
+    transition:  all 0.3s;
+}
+.thanh-toan button:hover{
+    background-color: #B91C1C;
+}
+.container iframe{
+    margin: 5%;
+    box-shadow: 0 0 5px gray;
+}
+.cua-hang{
+    background-color: white;
+    height: 63%;
+    margin-top: 5%;
+    border-radius: 10px;
+    position: relative;
+}
+.cua-hang a{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cua-hang button{
+    height: 50px;
+    background-color: white;
+    border: 0px;
+    width: 100%;
+    border: 1px solid rgb(164, 174, 201) ;
+}
+.cua-hang button:hover{
+    background-color: #EDEDED;
+}

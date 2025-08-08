@@ -1,0 +1,684 @@
+<script>
+    var sanpham = {
+    sp1: {
+        ten: "Casper Android TV 32 inch HD 32H5200",
+        img: "/img/sp1.webp",
+        gia_goc: 5990000,
+        gia_giam: 2990000,
+        loai: 'tivi'
+    },
+    sp2: {
+        ten: "Tủ lạnh Samsung Inverter 208 lít RT20HAR8DBU/SV",
+        img: "/img/sp2.webp",
+        gia_goc: 7890000,
+        gia_giam: 4990000,
+        loai: 'tu_lanh'
+    },
+    sp3: {
+        ten: "Máy giặt Casper Inverter 9.5 kg WF-95VG5",
+        img: "/img/sp3.webp",
+        gia_goc: 7490000,
+        gia_giam: 4990000,
+        loai: 'may_giat'
+    },
+    sp4: {
+        ten: "Samsung Smart TV 55 inch 4K UA55D7700",
+        img: "/img/sp4.webp",
+        gia_goc: 14890000,
+        gia_giam: 9990000,
+        loai: 'tivi'
+    },
+    sp5: {
+        ten: "Samsung Smart TV Crystal UHD 75 inch 4K UA75AU7700",
+        img: "/img/sp5.webp",
+        gia_goc: 23890000,
+        gia_giam: 14990000,
+        loai: 'tivi'
+    },
+    sp6: {
+        ten: "LG Smart TV QNED 65 inch 4K 65QNED80TSA",
+        img: "/img/sp6.webp",
+        gia_goc: 29890000,
+        gia_giam: 17490000,
+        loai: 'tivi'
+    },
+    sp7: {
+        ten: "Tủ lạnh Hisense Inverter 427 lít RQ519N4EBU",
+        img: "/img/sp7.webp",
+        gia_goc: 13990000,
+        gia_giam: 11990000,
+        loai: 'tu_lanh'
+    },
+    sp8: {
+        ten: "Quạt điều hoà Sunhouse SHD7727 150W",
+        img: "/img/sp8.webp",
+        gia_goc: 6490000,
+        gia_giam: 3990000,
+        loai: 'quat'
+    },
+    sp9: {
+        ten: "Máy lạnh Comfee Inverter 1 HP CFS-10VGPF",
+        img: "/img/sp9.webp",
+        gia_goc: 8390000,
+        gia_giam: 5990000,
+        loai: 'may_lanh'
+    },
+    sp10: {
+        ten: "iPhone 15 Pro Max 256GB",
+        img: "/img/sp10.webp",
+        gia_goc: 34900000,
+        gia_giam: 28490000,
+        loai: 'dien_thoai'
+    },
+    sp11: {
+        ten: "Samsung Smart TV QLED 55 inch 4K QA55Q60D",
+        img: "/img/sp11.webp",
+        gia_goc: 17890000,
+        gia_giam: 11990000,
+        loai: 'tivi'
+    },
+    sp12: {
+        ten: "Quạt điều hòa Sunhouse SHD7744 125W",
+        img: "/img/sp12.webp",
+        gia_goc: 3490000,
+        gia_giam: 2490000,
+        loai: 'quat'
+    },
+    sp13: {
+        ten: "Quạt không cánh Lumias T08",
+        img: "/img/sp13.webp",
+        gia_goc: 4990000,
+        gia_giam: 3190000,
+        loai: 'quat'
+    },
+    sp14: {
+        ten: "Laptop MSI Gaming Vector 16 HX AI A2XWHG-010VN",
+        img: "/img/sp14.webp",
+        gia_goc: 54990000,
+        gia_giam: 50990000,
+        loai: 'laptop'
+    },
+    sp15: {
+        ten: "PC Gaming E-Power N3060 B760 Core i5",
+        img: "/img/sp15.webp",
+        gia_goc: 19990000,
+        gia_giam: 17740000,
+        loai: 'pc'
+    },
+    sp16: {
+        ten: "Máy chơi game Sony PlayStation 5 Slim (PS5 Slim)",
+        img: "/img/sp16.webp",
+        gia_goc: 13300000,
+        gia_giam: 13300000,
+        loai: 'may_choi_game'
+    },
+    sp17: {
+        ten: "Laptop Asus TUF Gaming A17 FA706NFR-HX025W",
+        img: "/img/sp17.webp",
+        gia_goc: 20990000,
+        gia_giam: 17490000,
+        loai: 'laptop'
+    },
+    sp18: {
+        ten: "Laptop Acer Nitro V 15 ProPanel Gaming ANV15-51-534U i5",
+        img: "/img/sp18.webp",
+        gia_goc: 29990000,
+        gia_giam: 28490000,
+        loai: 'laptop'
+    },
+    sp19: {
+        ten: "Huawei Band 9",
+        img: "/img/sp19.webp",
+        gia_goc: 1090000,
+        gia_giam: 740000,
+        loai: 'dong_ho'
+    },
+    sp20: {
+        ten: "Amazfit Active 2",
+        img: "/img/sp20.webp",
+        gia_goc: 2990000,
+        gia_giam: 2790000,
+        loai: 'dong_ho'
+    },
+    sp21: {
+        ten: "Garmin Forerunner 165",
+        img: "/img/sp21.webp",
+        gia_goc: 6990000,
+        gia_giam: 4690000,
+        loai: 'dong_ho'
+    },
+    sp22: {
+        ten: "Samsung Galaxy Fit3",
+        img: "/img/sp22.webp",
+        gia_goc: 1390000,
+        gia_giam: 1190000,
+        loai: 'dong_ho'
+    },
+    sp23: {
+        ten: "Đồng hồ thông minh Garmin Forerunner 55",
+        img: "/img/sp23.webp",
+        gia_goc: 5290000,
+        gia_giam: 2790000,
+        loai: 'dong_ho'
+    },
+    sp24: {
+        ten: "Ipad A16 WiFi 128GB",
+        img: "/img/sp24.webp",
+        gia_goc: 9790000,
+        gia_giam: 8990000,
+        loai: 'ipad'
+    },
+    sp25: {
+        ten: "FPT Play Box S T590 - Điều khiển giọng nói không chạm",
+        img: "/img/sp25.webp",
+        gia_goc: 2390000,
+        gia_giam: 1690000,
+        loai: 'phu_kien'
+    },
+    sp26: {
+        ten: "Loa Bluetooth Anker Soundcore Motion 300",
+        img: "/img/sp26.webp",
+        gia_goc: 1990000,
+        gia_giam: 1521000,
+        loai: 'phu_kien'
+    },
+    sp27: {
+        ten: "Tai nghe Bluetooth choàng đầu có mic Havit H628BT",
+        img: "/img/sp27.webp",
+        gia_goc: 540000,
+        gia_giam: 309000,
+        loai: 'phu_kien'
+    },
+    sp28: {
+        ten: 'Huawei MatePad 11.5"S WiFi 8GB 256GB',
+        img: "/img/sp28.webp",
+        gia_goc: 14490000,
+        gia_giam: 11750000,
+        loai: 'laptop'
+    },
+    sp29: {
+        ten: 'Amazfit Active 2 Square',
+        img: "/img/sp29.webp",
+        gia_goc: 3990000,
+        gia_giam: 3690000,
+        loai: 'dong_ho'
+    },
+    sp30: {
+        ten: 'Amazfit Active 2 Dây da',
+        img: "/img/sp30.webp",
+        gia_goc: 3490000,
+        gia_giam: 3390000,
+        loai: 'dong_ho'
+    },
+    sp31: {
+        ten: 'Amazfit Bip 6',
+        img: "/img/sp31.webp",
+        gia_goc: 2340000,
+        gia_giam: 2150000,
+        loai: 'dong_ho'
+    },
+    sp32: {
+        ten: 'Huawei Watch Fit 4',
+        img: "/img/sp32.webp",
+        gia_goc: 3090000,
+        gia_giam: 2730000,
+        loai: 'dong_ho'
+    },
+    sp33: {
+        ten: 'Huawei Watch Fit 4 Pro',
+        img: "/img/sp33.webp",
+        gia_goc: 5990000,
+        gia_giam: 5380000,
+        loai: 'dong_ho'
+    }
+};
+
+    giohang=JSON.parse(sessionStorage.getItem('giohang'));
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/css/style3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+</head>
+<style>
+    .soluong{
+        width: 35%;
+        position: relative;
+        border:1px solid black;
+        border-radius:2px;
+        height:25px;
+        display:flex;
+        justify-content:space-between;
+        margin-left:5%;
+    }
+    .soluong button{
+        width: 30%;
+        border:0px;
+    }
+    .soluong input{
+        width: 30%;
+        height:19px; 
+        text-align: center; 
+        margin:0;
+        border:0px;
+        margin-top:2px;
+    }
+    .soluong input:focus{
+        outline:none;
+        border:0px;
+    }
+    .xoa{
+      
+        position:absolute;
+        display:flex;
+        width:50px;
+        height:50px;
+        justify-content:center;
+        align-items:center;
+        margin-left:210px;
+    }
+    .xoa button{
+        border:none;
+        background:none;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .xoa button i{
+        font-size:17px;
+    }
+</style>
+<body style="background-color: #F3F4F6;">
+    <header>
+        
+        <nav>
+            <img src="https://cdn2.fptshop.com.vn/unsafe/360x0/filters:format(webp):quality(75)/small/logo_main_b57b660849.png" alt="">
+            <a href="/index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+            <input type="text" style="width: 570px; height: 44px; border-radius: 25px; border: 0px; text-align: center;" value="" placeholder="Nhập tên điện thoại, máy tính, phụ kiện... cần tìm" style="color: #878184;">
+            <a href=""  style="position: absolute; width: 50px; height: 46px; display: flex; justify-content: center; align-items: center; margin-left: 650px;">
+                <i style="position: absolute; font-size: 25px; color: black;" class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            
+            
+            <div class="nav-phai">
+                <a class="dang-nhap" href="/dangnhap.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a class="gio-hang" href="/giohang/giohang1.html"><i class="fa-solid fa-cart-shopping">  </i> Giỏ hàng</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style=" display: flex; width: 100%; height: 700px;position: relative;top: 70px;">
+        <div class="sp" style="overflow: hidden;height: 500px;overflow: scroll;overflow-x: hidden;border-radius: 15px;overflow-y: auto;">
+            <div class="chose-all">
+                <div class="all-left">
+                <input type="checkbox">
+                <p>Chọn tất cả</p>
+                </div>
+                
+                <i class="fa-solid fa-trash"></i>
+            </div>
+            
+            <script>
+                var parent=document.querySelector('.sp');
+                var tam='';
+                var soluong;
+                var giagoc;
+                var giagiam;
+                var tongtien=0;
+                var tongkhuyenmai=0;
+                var canthanhtoan=0;
+                for(let ma_sp in giohang){
+                    soluong=giohang[ma_sp];
+                    giagoc= sanpham[ma_sp].gia_goc.toLocaleString('vi-VN');
+                    giagiam= sanpham[ma_sp].gia_giam.toLocaleString('vi-VN');
+                    tongtien+=giohang[ma_sp].tongtien;
+                    canthanhtoan+=giohang[ma_sp].canthanhtoan;
+                    tam+=`<div class="sp1">
+                            <div class="above">
+                                <input type="checkbox">
+                                <div style="width: 10%; height: 80%; border-radius: 10px; justify-content: center; display: flex;">
+                                    <img style="width: 90%;" src="${sanpham[ma_sp].img}" alt="">
+                                </div>
+                                
+                                <div>
+                                    <strong><p>Máy Lạnh Comfee Inverter 1 HP CFS-10VGPF</p></strong>
+                                    <div class="sub-color-active" style="background-color: #F3F4F6;width: 35%;  border-radius: 5px; ">
+                                        <p>Màu: Trắng</p>
+                                        <div class="sub-color">
+                                            <p>Màu xanh</p>
+                                            <p>Màu đen</p>
+                                            <p>Màu vàng</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; height: 100%;width: 36%; align-items: center;">
+                                    <div>
+                                        <p style="color: red; margin: 0;">${giagiam} <u>đ</u></p>
+                                        <strike style="font-size: 14px;float: right;color: #9CA3AF;">${giagoc} <u>đ</u></strike>
+                                    </div>
+                                    <div class="soluong">
+                                        <button class="del" style="border-right:1px solid gray;" name="del" value="${ma_sp}">-</button>
+                                        <input class="Num" type="text" disabled value=${giohang[ma_sp].soluong }>
+                                        <button class="add" style="border-left:1px solid gray;" name="add" value="${ma_sp}">+</button>
+                                    </div>
+                                    <button class="trash" data-value="${ma_sp}" style="right: 4%;position: absolute;z-index:2; background:none; border:none; font-size:17px;">
+                                        <i style="z-index:1;" class="fa-solid fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="below">
+                                <div style="align-items: center;display: flex; width: 100%; height: 40%; background-color: #F3F4F6; border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                                    <i style="margin: 0 2%;color: red;" class="fa-solid fa-shield"></i>
+                                    <p>Chọn gói bảo hành</p>
+                                </div>
+                                <div style="font-size: 13px; gap: 2%; align-items: center; display: flex; background-color: white ; height: 60%;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                                    <input class="bao-hanh" type="checkbox">
+                                    <p>Đặc quyền bảo hành trọn đời</p>
+                                    <p style="color: red;" class="gia-bao-hanh">+300.000 <u>đ</u></p>
+                                </div>
+                            </div>
+                        </div>`;
+                }
+                parent.innerHTML+=tam;
+            </script>
+        </div>
+        <div class="thanh-toan">
+            
+        </div>
+        <script>
+                
+                let donhang=document.querySelector('.thanh-toan');
+                tongkhuyenmai=tongtien-canthanhtoan;
+                tongtien=tongtien.toLocaleString('vi-VN');
+                canthanhtoan=canthanhtoan.toLocaleString('vi-VN');
+                tongkhuyenmai=tongkhuyenmai.toLocaleString('vi-VN');
+                donhang.innerHTML=`<div>
+                    <strong ><p style="margin-top: 10%;">Thông tin đơn hàng</p></strong>
+                    <div class="flex" style="border-bottom: 1px solid #a4a9b3; width: 90%;">
+                        <p>Tổng tiền</p>
+                        <p id="tong-tien">${tongtien} <u>đ</u></p>
+                    </div>
+                    <div class="flex" style="border-bottom: 1px dotted #a4a9b3; width: 90%;">
+                        <p>Tổng khuyến mãi</p>
+                        <p id="tong-khuyen-mai">${tongkhuyenmai} <u>đ</u></p>
+                    </div>
+                    <div class="flex"style=" width: 90%;">
+                        <p>Cần thanh toán</p>
+                        <p id="can-thanh-toan" style="color: red;">${canthanhtoan} <u>đ</u></p>
+                    </div>
+                    <div>
+                        <p >Mã giảm giá *</p>
+                        <input type="text" placeholder="  Nhập mã giảm giá">
+                    </div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center; margin: 0;margin-top: 10%;">
+                    <button type="button">Xác nhận đơn</button>
+                </div>`;
+                
+               
+            </script>
+    </div>
+    <footer>
+        <div style="width: 100%; height: 875px; background-color: #090D14; position: relative; color: white; font-family: Arial, Helvetica, sans-serif;">
+            <div style=" display: flex; width: 96%; height: 133px; justify-self: center; align-items: center;border-bottom: 1px solid darkgray;">
+                <div>
+                    <strong><p>Hệ thống FPT Shop trên toàn quốc</p></strong>
+                    <p style="font-size: 15px;">Bao gồm Cửa hàng FPT Shop, Trung tâm Laptop, F.Studio, S.Studio, Garmin Brand Store</p>
+                </div>
+                <a href="/danhsachcuahang.html" style="width: 255px;height: 44px;background-color: #DC2626; border-radius: 25px;text-decoration: none; color: white; text-align: center;line-height: 44px;margin-left: 28%; font-size: 18px;">
+                    Xem danh sách cửa hàng</a>
+            </div> 
+            <div style="width: 97%; height: 424px;justify-self: center;position: relative; align-items: center; display: flex; border-bottom: 1px solid darkgray;">
+                <div style="width: 75%; height: 80%;  position: relative;display: flex;align-items: center;">
+                    <div class="footer-information">
+                        <strong><p>KẾT NỐI VỚI FPT SHOP</p></strong>
+                        <div style="display: flex;gap: 10px;">
+                            <div>
+                            <a href="">
+                                <img src="https://cdn2.fptshop.com.vn/svg/youtube_icon_b492d61ba5.svg" alt="">
+                            </a>
+                            </div>
+                            <div>
+                            <a href="https://www.tiktok.com/@fptshop.official">
+                                <img src="https://cdn2.fptshop.com.vn/svg/tiktok_icon_faabbeeb61.svg" alt="">
+                            </a>
+                            </div>
+                            <div>
+                                <a href="https://zalo.me/2659487666103055748">
+                                    <img src="https://cdn2.fptshop.com.vn/svg/zalo_icon_8cbef61812.svg" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/FPTShopOnline">
+                                    <img src="https://cdn2.fptshop.com.vn/svg/facebook_icon_8543190720.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <strong><p style="font-size: 14px;">TỔNG ĐÀI MIỄN PHÍ</p></strong>
+                        <div class="hot-line">
+                            <p>Tư vấn mua hàng (Miễn phí)</p>
+                        <p><strong>1800.6601</strong> (Nhánh 1)</p>
+                        </div>
+                        <div class="hot-line">
+                            <p>Hỗ trợ kỹ thuật</p>
+                        <p><strong>1800.6601</strong> (Nhánh 2)</p>
+                        </div>
+                        <div class="hot-line">
+                            <p>Góp ý, khiếu nại</p>
+                        <p><strong>1800.6616</strong> (8h00 - 22h00)</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="footer-information">
+                        <strong><p>VỀ CHÚNG TÔI</p></strong>
+                        <div class="about-us">
+                        
+                        <p>Giới thiệu về công ty</p>
+                        <p>Quy chế hoạt động</p>
+                        <p>Dự án Doanh nghiệp</p>
+                        <p>Tin tức khuyến mại</p>
+                        <p>Giới thiệu máy đổi trả</p>
+                        <p>Hướng dẫn mua hàng & thanh toán online</p>
+                        <p>Đại lý uỷ quyền và TTBH uỷ quyền của Apple</p>
+                        <p>Tra cứu hoá đơn điện tử</p>
+                        <p>Tra cứu bảo hành</p>
+                        <p>Câu hỏi thường gặp</p>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="footer-information">
+                        <strong><p>CHÍNH SÁCH</p></strong>
+                        <div class="about-us">
+                            <p>Chính sách bảo hành</p>
+                            <p>Chính sách đổi trả</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Chính sách trả góp</p>
+                            <p>Chính sách khui hộp sản phẩm</p>
+                            <p>Chính sách giao hàng & lắp đặt</p>
+                            <p>Chính sách mạng di động FPT</p>
+                            <p>Chính sách thu thập & xử lý dữ liệu cá nhân</p>
+                            <p>Quy định về hỗ trợ kỹ thuật & sao lưu dữ liệu</p>
+                            <p>Chính sách giao hàng & lắp đặt Điện máy, Gia dụng</p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+              
+                <div style=" width: 20%; height: 80%; margin-bottom: 20px; position: absolute;right: 0px;">
+                    <strong style="text-transform: uppercase;"><p>Hỗ trợ thanh toán</p></strong>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/visa_icon_44fe6e15ed.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/mastercard_icon_c75f94f6a5.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/jcb_icon_214783937c.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/amex_icon_d6fb68108d.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/vnpay_icon_f42045057d.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/zalopay_icon_26d64ea93f.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/napas_icon_94d5330e3c.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/kredivo_icon_04f72baf36.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/momo_icon_baef21b5f7.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/foxpay_icon_063b36c1f8.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/alepay_icon_20d5310617.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/muadee_icon_5e297d9e61.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/homepaylater_icon_adef600842.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/applepay_icon_cb6806a0d0.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/samsungpay_icon_0292aa9876.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/googlepay_icon_afa293cc14.svg" alt="">
+                    </div>
+
+                    <strong><p>CHỨNG NHẬN</p></strong>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/dmca_icon_8fc6622bd5.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/thuong_hieu_manh_2013_icon_b56f772475.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/san_pham_dich_vu_hang_dau_viet_nam_icon_282a9ba4f7.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdn2.fptshop.com.vn/svg/noi_khong_voi_hang_gia_icon_e16037d9cb.svg" alt="">
+                        <img src="https://cdn2.fptshop.com.vn/svg/da_thong_bao_bo_cong_thuong_icon_64785fb3f7.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid darkgray; width: 100%;height: 102px;  display: flex; align-items: center;justify-content: center;">
+                <p>WEBSITE CÙNG FPT POLY</p>
+                <div class="footer-3">
+                    <p style="font-size: 13px;">Cửa hàng uỷ quyền bởi Apple:</p>
+                    <img src="https://cdn2.fptshop.com.vn/svg/fstudio_icon_97c012f7bf.svg" alt="">
+                </div>
+                <div class="footer-3" style="border-left: 1px solid white;">
+                    <p style="font-size: 13px;">Trung tâm bảo hành uỷ quyền Apple:</p>
+                    <img src="https://cdn2.fptshop.com.vn/svg/fcare_icon_6a21e551f6.svg" alt="">
+                </div>
+                <div class="footer-3" style="border-left: 1px solid white;">
+                    <p style="font-size: 13px;">Chuỗi nhà thuốc:</p>
+                    <img src="https://cdn2.fptshop.com.vn/svg/nha_thuoc_long_chau_icon_fc294f9f11.svg" alt="">
+                </div>
+            </div>
+            <div style="bottom: 60px; position: absolute;">
+                <p style="text-align: center;">
+                    © 2007 - 2024 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT • Địa chỉ: 261 - 263 Khánh Hội, P2, Q4, TP. Hồ Chí Minh • GPĐKKD số 0311609355 do Sở KHĐT TP.HCM cấp ngày 08/03/2012 • GP số 47/GP-TTĐT do sở TTTT TP HCM cấp ngày 02/07/2018 • Điện thoại: (028) 7302 3456 • Email: fptshop@fpt.com • Chịu trách nhiệm nội dung: Trần Kim Thịnh hahahaha.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script id="chat" src="/js/custom.js"></script>
+</body>
+<script>
+    var del=document.querySelectorAll('.del');
+    var add=document.querySelectorAll('.add');
+    var num=document.querySelectorAll('.num');
+    var tongtien=document.getElementById("tong-tien");
+    var tongkhuyenmai=document.getElementById("tong-khuyen-mai");
+    var canthanhtoan=document.getElementById("can-thanh-toan");
+    function xauthanhso(a){
+        a=Number(a.replace(/\D/g,''));
+        return a;
+    }
+    function updategiatien(sum,pay){
+        let tam1=sum.toLocaleString('vi-VN');
+        let tam2=pay.toLocaleString('vi-VN');
+        let tam3=(sum-pay).toLocaleString('vi-VN');
+        tongtien.innerHTML=`${tam1} <u>đ</u>`;
+        canthanhtoan.innerHTML=`${tam2} <u>đ</u>`;
+        tongkhuyenmai.innerHTML=`${tam3} <u>đ</u>`;
+    }
+    var tam1;
+    var tam2;
+    for(let i=0;i<del.length;i++){
+        del[i].addEventListener('click',function(){
+            if(num[i].value>0){
+                num[i].value--;
+                tam1=xauthanhso(tongtien.innerText);
+                tam1-=sanpham[this.value].gia_goc;
+                tam2=xauthanhso(canthanhtoan.innerText);
+                tam2-=sanpham[this.value].gia_giam;
+                updategiatien(tam1,tam2);
+               giohang[this.value].soluong--;
+               giohang[this.value].tongtien-=sanpham[this.value].gia_goc;
+               giohang[this.value].canthanhtoan-=sanpham[this.value].gia_giam;
+               sessionStorage.setItem('giohang',JSON.stringify(giohang));
+            }
+            
+        })
+        add[i].addEventListener('click',function(){
+            num[i].value++;
+            tam1=xauthanhso(tongtien.innerText);
+            tam1+=sanpham[this.value].gia_goc;
+            tam2=xauthanhso(canthanhtoan.innerText);
+            tam2+=sanpham[this.value].gia_giam;
+            updategiatien(tam1,tam2);
+            giohang[this.value].soluong++;
+            giohang[this.value].tongtien+=sanpham[this.value].gia_goc;
+               giohang[this.value].canthanhtoan+=sanpham[this.value].gia_giam;
+            sessionStorage.setItem('giohang',JSON.stringify(giohang));
+        })
+    }
+    var baohanh=document.querySelectorAll(".bao-hanh");
+    var giabaohanh=document.querySelectorAll(".gia-bao-hanh");
+    var check=false;
+    for(let i=0;i<baohanh.length;i++){
+        baohanh[i].addEventListener('click',function(){
+            if(!check){
+                check=true;
+                tam1=xauthanhso(canthanhtoan.innerText);
+                tam2=xauthanhso(giabaohanh[i].innerText);
+                tam=(tam1+tam2).toLocaleString('vi-VN');
+                canthanhtoan.innerHTML=`${tam} <u>đ</u>`;
+            }else{
+                check=false;
+                tam1=xauthanhso(canthanhtoan.innerText);
+                tam2=xauthanhso(giabaohanh[i].innerText);
+                tam=(tam1-tam2).toLocaleString('vi-VN');
+                canthanhtoan.innerHTML=`${tam} <u>đ</u>`;
+            }
+        })
+    }
+    var sp=document.querySelectorAll('.sp1');
+    var choseAll=document.querySelector('.sp');
+    for(let i=0;i<sp.length;i++){
+        sp[i].addEventListener('click',function(e){
+            if(e.target.parentNode.classList.contains('trash')){
+                let ma_sp=e.target.parentNode.dataset.value;
+                let tam1=xauthanhso(tongtien.innerText);
+                let tam2=xauthanhso(canthanhtoan.innerText);
+                tam1-=giohang[ma_sp].tongtien;
+                tam2-=giohang[ma_sp].canthanhtoan;
+                updategiatien(tam1,tam2);
+                
+                delete giohang[ma_sp];
+                sessionStorage.setItem('giohang',JSON.stringify(giohang));
+
+                sp[i].remove();
+            }
+        })
+    }
+    var choseAll=document.querySelector('.sp');
+    choseAll.addEventListener('click',function(e){
+        if(e.target.parentNode.classList.contains('chose-all')){
+            for(let i=0;i<sp.length;i++){
+                sp[i].remove();
+            }
+            let giohang={};
+            sessionStorage.setItem('giohang',JSON.stringify(giohang));
+        }
+    })
+</script>
+</html>
